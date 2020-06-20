@@ -2,13 +2,24 @@ import React from 'react'
 
 import CTA from '../components/CTA'
 import InfoCard from '../components/Cards/InfoCard'
-import SimpleTable from '../components/Tables/SimpleTable'
 import ChartCard from '../components/Chart/ChartCard'
 import { Doughnut, Line } from 'react-chartjs-2'
 import ChartLegend from '../components/Chart/ChartLegend'
 import PageTitle from '../components/Typography/PageTitle'
 import { ChatIcon, CartIcon, MoneyIcon, PeopleIcon } from '../icons'
 import RoundIcon from '../components/RoundIcon'
+import data from '../utils/demo/tableData'
+import {
+  TableBody,
+  TableContainer,
+  Table,
+  TableHeader,
+  TableCell,
+  TableRow,
+  TableFooter,
+} from '../components/Tables'
+import Avatar from '../components/Avatar'
+import Badge from '../components/Badge'
 
 function Dashboard() {
   const doughnutLegends = [
@@ -151,7 +162,43 @@ function Dashboard() {
         </InfoCard>
       </div>
 
-      <SimpleTable />
+      <TableContainer>
+        <Table>
+          <TableHeader>
+            <tr>
+              <TableCell>Client</TableCell>
+              <TableCell>Amount</TableCell>
+              <TableCell>Status</TableCell>
+              <TableCell>Date</TableCell>
+            </tr>
+          </TableHeader>
+          <TableBody>
+            {data.map((user, i) => (
+              <TableRow key={i}>
+                <TableCell>
+                  <div className="flex items-center text-sm">
+                    <Avatar className="hidden mr-3 md:block" img={user.avatar} />
+                    <div>
+                      <p className="font-semibold">{user.name}</p>
+                      <p className="text-xs text-gray-600 dark:text-gray-400">{user.job}</p>
+                    </div>
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <span className="text-sm">$ {user.amount}</span>
+                </TableCell>
+                <TableCell>
+                  <Badge type={user.status}>{user.status}</Badge>
+                </TableCell>
+                <TableCell>
+                  <span className="text-sm">{new Date(user.date).toLocaleDateString()}</span>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+        <TableFooter />
+      </TableContainer>
 
       <PageTitle>Charts</PageTitle>
       <div className="grid gap-6 mb-8 md:grid-cols-2">

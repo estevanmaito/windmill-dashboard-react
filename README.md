@@ -48,9 +48,9 @@ Read comments inside [routes.js](./src/routes.js)
 
 - Extract table icon buttons into components
 
-- Place demo tables directly inside pages instead of creating components.
+- [x] Place demo tables directly inside pages instead of creating components.
 
-- Allow extras classes to be passed to TableContainer (need `mb-8` rn)
+- [x] Allow extras classes to be passed to TableContainer (need `mb-8` rn)
 
 ### Modal
 
