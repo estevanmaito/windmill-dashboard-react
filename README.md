@@ -42,13 +42,15 @@ Read comments inside [routes.js](./src/routes.js)
 
 ### Cards
 
-- Create better cards structure and divide into components
+- [x] Create better cards structure and divide into components
 
 ### Tables
 
 - Extract table icon buttons into components
 
-- Place demo tables directly inside pages instead of creating components. Allow extras classes to be passed to TableContainer (need `mb-8` rn)
+- Place demo tables directly inside pages instead of creating components.
+
+- Allow extras classes to be passed to TableContainer (need `mb-8` rn)
 
 ### Modal
 
@@ -61,6 +63,8 @@ Read comments inside [routes.js](./src/routes.js)
 ### Final
 
 - Place reusable components in external library `windmill-ui-react`
+
+- Find approach to chose different themes (primary color, etc)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
