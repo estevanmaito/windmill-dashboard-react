@@ -17,6 +17,14 @@ import { ReactComponent as CartIcon } from './cart.svg'
 import { ReactComponent as ChatIcon } from './chat.svg'
 import { ReactComponent as MoneyIcon } from './money.svg'
 import { ReactComponent as PeopleIcon } from './people.svg'
+import { ReactComponent as SearchIcon } from './search.svg'
+import { ReactComponent as MoonIcon } from './moon.svg'
+import { ReactComponent as SunIcon } from './sun.svg'
+import { ReactComponent as BellIcon } from './bell.svg'
+import { ReactComponent as MenuIcon } from './menu.svg'
+import { ReactComponent as OutlinePersonIcon } from './outlinePerson.svg'
+import { ReactComponent as OutlineCogIcon } from './outlineCog.svg'
+import { ReactComponent as OutlineLogoutIcon } from './outlineLogout.svg'
 
 export {
   ButtonsIcon,
@@ -38,4 +46,12 @@ export {
   ChatIcon,
   MoneyIcon,
   PeopleIcon,
+  SearchIcon,
+  MoonIcon,
+  SunIcon,
+  BellIcon,
+  MenuIcon,
+  OutlinePersonIcon,
+  OutlineCogIcon,
+  OutlineLogoutIcon,
 }

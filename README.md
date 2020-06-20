@@ -20,17 +20,19 @@ Read comments inside [routes.js](./src/routes.js)
 
 - Improve `Suspense` fallback
 
+- Componentize dropdown menus
+
 ### Sidebar
 
 - Pass individual event handlers to accordion menus in sidebar (rn one click open both Pages menus)
 
-- Check why the page is re-rendered when sidebar is opened/closed on mobile. To reproduce: Got to Dashboard main page, reduce screen size, open and close the sidebar. You can see the table is being re-rendered.
+- Needs to be checked again, as tables are now static: Check why the page is re-rendered when sidebar is opened/closed on mobile. To reproduce: Got to Dashboard main page, reduce screen size, open and close the sidebar. You can see the table is being re-rendered.
 
 ### Dashboard
 
-- Use `Input` for "Search for projects" in `Header`
+- [x] Use `Input` for "Search for projects" in `Header`
 
-- Create round icons for Dashboard cards
+- [x] Create round icons for Dashboard cards
 
 - Create `Pagination` component
 
