@@ -24,7 +24,7 @@ Read comments inside [routes.js](./src/routes.js)
 
 ### Sidebar
 
-- Pass individual event handlers to accordion menus in sidebar (rn one click open both Pages menus)
+- [x] Pass individual event handlers to accordion menus in sidebar (rn one click open both Pages menus)
 
 - Needs to be checked again, as tables are now static: Check why the page is re-rendered when sidebar is opened/closed on mobile. To reproduce: Got to Dashboard main page, reduce screen size, open and close the sidebar. You can see the table is being re-rendered.
 

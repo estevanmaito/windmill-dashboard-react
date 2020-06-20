@@ -42,7 +42,6 @@ const routes = [
     name: 'Tables',
   },
   {
-    path: '/pages',
     icon: 'PagesIcon',
     name: 'Pages',
     routes: [
