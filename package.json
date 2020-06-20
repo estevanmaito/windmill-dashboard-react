@@ -2,6 +2,16 @@
   "name": "windmill-dashboard-react",
   "version": "0.1.0-alpha.0",
   "private": true,
+  "scripts": {
+    "tailwind:dev": "tailwindcss build src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
+    "tailwind:build": "env NODE_ENV=production postcss src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
+    "prestart": "npm run tailwind:dev",
+    "start": "react-scripts start",
+    "prebuild": "npm run tailwind:build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "4.2.4",
     "@testing-library/react": "9.5.0",
@@ -16,16 +26,6 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
     "react-transition-group": "4.4.1"
-  },
-  "scripts": {
-    "tailwind:dev": "tailwindcss build src/tailwind.css -o src/tailwind.output.css",
-    "tailwind:build": "env NODE_ENV=production postcss src/tailwind.css -o src/tailwind.output.css",
-    "prestart": "npm run tailwind:dev",
-    "start": "react-scripts start",
-    "prebuild": "npm run tailwind:build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,5 +51,12 @@
     "postcss-cli": "7.1.1",
     "tailwindcss": "1.4.6",
     "tailwindcss-multi-theme": "1.0.3"
-  }
+  },
+  "keywords": [
+    "windmill",
+    "dashboard",
+    "admin",
+    "tailwind",
+    "react"
+  ]
 }
