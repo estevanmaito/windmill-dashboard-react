@@ -16,7 +16,7 @@ function Buttons() {
       <CTA />
 
       <SectionTitle>Sizes</SectionTitle>
-      <div className="flex flex-col flex-wrap mb-4 space-y-4 md:flex-row md:items-end md:space-x-4">
+      <div className="flex flex-col flex-wrap mb-8 space-y-4 md:flex-row md:items-end md:space-x-4">
         <div>
           <Button size="larger">Larger Button</Button>
         </div>
@@ -41,6 +41,43 @@ function Buttons() {
 
         <div>
           <Button size="small">Regular</Button>
+        </div>
+      </div>
+
+      <SectionTitle>Outline</SectionTitle>
+      <div className="flex flex-col flex-wrap mb-8 space-y-4 md:flex-row md:items-end md:space-x-4">
+        <div>
+          <Button outline size="larger">
+            Larger Button
+          </Button>
+        </div>
+
+        <div>
+          <Button outline size="large">
+            Large Button
+          </Button>
+        </div>
+
+        <div>
+          <Button outline>Regular</Button>
+        </div>
+
+        <div>
+          <Button outline tag={Link} to="/dashboard">
+            Router Link
+          </Button>
+        </div>
+
+        <div>
+          <Button outline disabled>
+            Disabled
+          </Button>
+        </div>
+
+        <div>
+          <Button outline size="small">
+            Regular
+          </Button>
         </div>
       </div>
 
