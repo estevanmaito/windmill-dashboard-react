@@ -2,7 +2,6 @@ import React, { useContext, useState, useRef } from 'react'
 import useOutsideClick from '../hooks/useOutsideClick'
 import { ThemeContext } from '../context/ThemeContext'
 import { SidebarContext } from '../context/SidebarContext'
-import Transition from './Transition'
 import {
   SearchIcon,
   MoonIcon,
@@ -93,26 +92,23 @@ function Header() {
                 className="absolute top-0 right-0 inline-block w-3 h-3 transform translate-x-1 -translate-y-1 bg-red-600 border-2 border-white rounded-full dark:border-gray-800"
               ></span>
             </button>
-            <Transition
-              show={isNotificationsMenuOpen}
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
+
+            <Dropdown
+              isOpen={isNotificationsMenuOpen}
+              onClose={() => setIsNotificationsMenuOpen(false)}
             >
-              <Dropdown aria-label="submenu">
-                <DropdownItem tag="a" href="#" className="justify-between">
-                  <span>Messages</span>
-                  <Badge type="danger">13</Badge>
-                </DropdownItem>
-                <DropdownItem tag="a" href="#" className="justify-between">
-                  <span>Sales</span>
-                  <Badge type="danger">2</Badge>
-                </DropdownItem>
-                <DropdownItem onClick={() => alert('Alerts!')}>
-                  <span>Alerts</span>
-                </DropdownItem>
-              </Dropdown>
-            </Transition>
+              <DropdownItem tag="a" href="#" className="justify-between">
+                <span>Messages</span>
+                <Badge type="danger">13</Badge>
+              </DropdownItem>
+              <DropdownItem tag="a" href="#" className="justify-between">
+                <span>Sales</span>
+                <Badge type="danger">2</Badge>
+              </DropdownItem>
+              <DropdownItem onClick={() => alert('Alerts!')}>
+                <span>Alerts</span>
+              </DropdownItem>
+            </Dropdown>
           </li>
           {/* <!-- Profile menu --> */}
           <li className="relative" ref={profileRef}>
@@ -128,27 +124,20 @@ function Header() {
                 aria-hidden="true"
               />
             </button>
-            <Transition
-              show={isProfileMenuOpen}
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <Dropdown aria-label="submenu">
-                <DropdownItem tag="a" href="#">
-                  <OutlinePersonIcon className="w-4 h-4 mr-3" aria-hidden="true" />
-                  <span>Profile</span>
-                </DropdownItem>
-                <DropdownItem tag="a" href="#">
-                  <OutlineCogIcon className="w-4 h-4 mr-3" aria-hidden="true" />
-                  <span>Settings</span>
-                </DropdownItem>
-                <DropdownItem onClick={() => alert('Log out!')}>
-                  <OutlineLogoutIcon className="w-4 h-4 mr-3" aria-hidden="true" />
-                  <span>Log out</span>
-                </DropdownItem>
-              </Dropdown>
-            </Transition>
+            <Dropdown isOpen={isProfileMenuOpen} onClose={() => setIsProfileMenuOpen(false)}>
+              <DropdownItem tag="a" href="#">
+                <OutlinePersonIcon className="w-4 h-4 mr-3" aria-hidden="true" />
+                <span>Profile</span>
+              </DropdownItem>
+              <DropdownItem tag="a" href="#">
+                <OutlineCogIcon className="w-4 h-4 mr-3" aria-hidden="true" />
+                <span>Settings</span>
+              </DropdownItem>
+              <DropdownItem onClick={() => alert('Log out!')}>
+                <OutlineLogoutIcon className="w-4 h-4 mr-3" aria-hidden="true" />
+                <span>Log out</span>
+              </DropdownItem>
+            </Dropdown>
           </li>
         </ul>
       </div>

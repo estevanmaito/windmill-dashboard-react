@@ -199,6 +199,7 @@ module.exports = {
     borderColor: ['focus', 'hover', 'dark', 'dark:focus', 'dark:hover'],
     divideColor: ['dark'],
     boxShadow: ['focus', 'dark:focus'],
+    margin: ['responsive', 'last'],
   },
   plugins: [
     require('tailwindcss-multi-theme'),

@@ -18,51 +18,19 @@ Read comments inside [routes.js](./src/routes.js)
 
 ## TODO
 
-- Focus first element when opening dropdowns (and focus trap)
+- [x] Focus first element when opening dropdowns (and focus trap)
+
+- Jump to main content
 
 - Improve `Suspense` fallback
 
-- [x] Componentize dropdown menus
-
 ### Sidebar
-
-- [x] Pass individual event handlers to accordion menus in sidebar (rn one click open both Pages menus)
 
 - Needs to be checked again, as tables are now static: Check why the page is re-rendered when sidebar is opened/closed on mobile. To reproduce: Got to Dashboard main page, reduce screen size, open and close the sidebar. You can see the table is being re-rendered.
 
 ### Dashboard
 
-- [x] Use `Input` for "Search for projects" in `Header`
-
-- [x] Create round icons for Dashboard cards
-
 - Create `Pagination` component
-
-### Forms
-
-- [x] Add `disabled` style to `radio` and `checkbox`
-
-- [x] Add icons and buttons to `Input` (won't create a component for this)
-
-### Cards
-
-- [x] Create better cards structure and divide into components
-
-### Tables
-
-- [x] Extract table icon buttons into components
-
-- [x] Place demo tables directly inside pages instead of creating components.
-
-- [x] Allow extras classes to be passed to TableContainer (need `mb-8` rn)
-
-### Modal
-
-- [x] Fix modal focus trap
-
-### Login/Forgot/Create
-
-- [x] Use components
 
 ### Final
 
