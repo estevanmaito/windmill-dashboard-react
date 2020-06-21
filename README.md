@@ -56,7 +56,7 @@ Read comments inside [routes.js](./src/routes.js)
 
 ### Modal
 
-- Fix modal focus trap
+- [x] Fix modal focus trap
 
 ### Login/Forgot/Create
 
