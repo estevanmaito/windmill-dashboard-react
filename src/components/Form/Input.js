@@ -6,7 +6,7 @@ const Input = React.forwardRef(function Input(props, ref) {
   const baseStyle =
     'block w-full text-sm dark:border-gray-600 focus:outline-none dark:text-gray-300 form-input'
   const activeStyle =
-    'focus:border-purple-400 focus:shadow-outline-purple dark:focus:shadow-outline-gray dark:bg-gray-700'
+    'focus:border-purple-400 focus:shadow-outline-purple dark:focus:border-gray-600 dark:focus:shadow-outline-gray dark:bg-gray-700'
   const disabledStyle = 'cursor-not-allowed opacity-50 bg-gray-300 dark:bg-gray-800'
   const validStyle =
     'border-green-600 dark:bg-gray-700 focus:border-green-400 focus:shadow-outline-green'
@@ -48,7 +48,7 @@ const Input = React.forwardRef(function Input(props, ref) {
     className
   )
 
-  return <input className={cls} type={type} ref={ref} {...other} />
+  return <input className={cls} type={type} ref={ref} disabled={disabled} {...other} />
 })
 
 export default Input

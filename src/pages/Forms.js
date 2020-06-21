@@ -24,6 +24,11 @@ function Forms() {
           <Input className="mt-1" placeholder="Jane Doe" />
         </Label>
 
+        <Label className="mt-4">
+          <span>Disabled</span>
+          <Input disabled className="mt-1" placeholder="Jane Doe" />
+        </Label>
+
         <div className="mt-4">
           {/* TODO: Check if this label is accessible, or fallback */}
           {/* <span className="text-sm text-gray-700 dark:text-gray-400">Account Type</span> */}
@@ -36,6 +41,10 @@ function Forms() {
             <Label className="ml-6" radio>
               <Input type="radio" value="business" name="accountType" />
               <span className="ml-2">Business</span>
+            </Label>
+            <Label disabled className="ml-6" radio>
+              <Input disabled type="radio" value="disabled" name="accountType" />
+              <span className="ml-2">Disabled</span>
             </Label>
           </div>
         </div>

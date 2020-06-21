@@ -18,6 +18,8 @@ Read comments inside [routes.js](./src/routes.js)
 
 ## TODO
 
+- Focus first element when opening dropdowns (and focus trap)
+
 - Improve `Suspense` fallback
 
 - [x] Componentize dropdown menus
@@ -38,7 +40,7 @@ Read comments inside [routes.js](./src/routes.js)
 
 ### Forms
 
-- Add `disabled` style to `radio` and `checkbox`
+- [x] Add `disabled` style to `radio` and `checkbox`
 
 - [x] Add icons and buttons to `Input` (won't create a component for this)
 
