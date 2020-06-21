@@ -60,7 +60,7 @@ Read comments inside [routes.js](./src/routes.js)
 
 ### Login/Forgot/Create
 
-- Use components
+- [x] Use components
 
 ### Final
 

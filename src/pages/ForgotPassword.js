@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import ImageLight from '../assets/img/forgot-password-office.jpeg'
 import ImageDark from '../assets/img/forgot-password-office-dark.jpeg'
 import Button from '../components/Button'
+import { Label, Input } from '../components/Form'
 
 function ForgotPassword() {
   return (
@@ -29,13 +30,11 @@ function ForgotPassword() {
               <h1 className="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
                 Forgot password
               </h1>
-              <label className="block text-sm">
-                <span className="text-gray-700 dark:text-gray-400">Email</span>
-                <input
-                  className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Jane Doe"
-                />
-              </label>
+
+              <Label>
+                <span>Email</span>
+                <Input className="mt-1" placeholder="Jane Doe" />
+              </Label>
 
               <Button tag={Link} to="/login" className="w-full mt-4">
                 Recover password

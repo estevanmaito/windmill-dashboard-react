@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import ImageLight from '../assets/img/login-office.jpeg'
 import ImageDark from '../assets/img/login-office-dark.jpeg'
 import { GithubIcon, TwitterIcon } from '../icons'
+import { Label, Input } from '../components/Form'
+import Button from '../components/Button'
 
 function Login() {
   return (
@@ -27,40 +29,30 @@ function Login() {
           <div className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div className="w-full">
               <h1 className="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">Login</h1>
-              <label className="block text-sm">
-                <span className="text-gray-700 dark:text-gray-400">Email</span>
-                <input
-                  className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Jane Doe"
-                />
-              </label>
-              <label className="block mt-4 text-sm">
-                <span className="text-gray-700 dark:text-gray-400">Password</span>
-                <input
-                  className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="***************"
-                  type="password"
-                />
-              </label>
+              <Label>
+                <span>Email</span>
+                <Input className="mt-1" type="email" placeholder="john@doe.com" />
+              </Label>
 
-              {/* <!-- You should use a button here, as the anchor is only used for the example  --> */}
-              <Link
-                className="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
-                to="/"
-              >
+              <Label className="mt-4">
+                <span>Password</span>
+                <Input className="mt-1" type="password" placeholder="***************" />
+              </Label>
+
+              <Button className="w-full mt-4" tag={Link} to="/">
                 Log in
-              </Link>
+              </Button>
 
               <hr className="my-8" />
 
-              <button className="flex items-center justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg dark:text-gray-400 active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray">
+              <Button className="w-full" outline>
                 <GithubIcon className="w-4 h-4 mr-2" aria-hidden="true" />
                 Github
-              </button>
-              <button className="flex items-center justify-center w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg dark:text-gray-400 active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray">
+              </Button>
+              <Button className="w-full mt-4" outline>
                 <TwitterIcon className="w-4 h-4 mr-2" aria-hidden="true" />
                 Twitter
-              </button>
+              </Button>
 
               <p className="mt-4">
                 <Link

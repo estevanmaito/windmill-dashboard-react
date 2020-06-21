@@ -5,6 +5,7 @@ import ImageLight from '../assets/img/create-account-office.jpeg'
 import ImageDark from '../assets/img/create-account-office-dark.jpeg'
 import { GithubIcon, TwitterIcon } from '../icons'
 import Button from '../components/Button'
+import { Input, Label } from '../components/Form'
 
 function Login() {
   return (
@@ -30,57 +31,40 @@ function Login() {
               <h1 className="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
                 Create account
               </h1>
-              <label className="block text-sm">
-                <span className="text-gray-700 dark:text-gray-400">Email</span>
-                <input
-                  className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Jane Doe"
-                />
-              </label>
-              <label className="block mt-4 text-sm">
-                <span className="text-gray-700 dark:text-gray-400">Password</span>
-                <input
-                  className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="***************"
-                  type="password"
-                />
-              </label>
-              <label className="block mt-4 text-sm">
-                <span className="text-gray-700 dark:text-gray-400">Confirm password</span>
-                <input
-                  className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="***************"
-                  type="password"
-                />
-              </label>
+              <Label>
+                <span>Email</span>
+                <Input className="mt-1" type="email" placeholder="john@doe.com" />
+              </Label>
+              <Label className="mt-4">
+                <span>Password</span>
+                <Input className="mt-1" placeholder="***************" type="password" />
+              </Label>
+              <Label className="mt-4">
+                <span>Confirm password</span>
+                <Input className="mt-1" placeholder="***************" type="password" />
+              </Label>
 
-              <div className="flex mt-6 text-sm">
-                <label className="flex items-center dark:text-gray-400">
-                  <input
-                    type="checkbox"
-                    className="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                  />
-                  <span className="ml-2">
-                    I agree to the <span className="underline">privacy policy</span>
-                  </span>
-                </label>
-              </div>
+              <Label className="mt-6" check>
+                <Input type="checkbox" />
+                <span className="ml-2">
+                  I agree to the <span className="underline">privacy policy</span>
+                </span>
+              </Label>
 
-              {/* You should use a button here, as the anchor is only used for the example  */}
               <Button tag={Link} to="/login" className="w-full mt-4">
                 Create account
               </Button>
 
               <hr className="my-8" />
 
-              <button className="flex items-center justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg dark:text-gray-400 active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray">
+              <Button className="w-full" outline>
                 <GithubIcon className="w-4 h-4 mr-2" aria-hidden="true" />
                 Github
-              </button>
-              <button className="flex items-center justify-center w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg dark:text-gray-400 active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray">
+              </Button>
+              <Button className="w-full mt-4" outline>
                 <TwitterIcon className="w-4 h-4 mr-2" aria-hidden="true" />
                 Twitter
-              </button>
+              </Button>
 
               <p className="mt-4">
                 <Link
