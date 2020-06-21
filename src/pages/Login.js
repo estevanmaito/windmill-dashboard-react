@@ -39,17 +39,17 @@ function Login() {
                 <Input className="mt-1" type="password" placeholder="***************" />
               </Label>
 
-              <Button className="w-full mt-4" tag={Link} to="/">
+              <Button className="mt-4" block tag={Link} to="/">
                 Log in
               </Button>
 
               <hr className="my-8" />
 
-              <Button className="w-full" outline>
+              <Button block layout="outline">
                 <GithubIcon className="w-4 h-4 mr-2" aria-hidden="true" />
                 Github
               </Button>
-              <Button className="w-full mt-4" outline>
+              <Button className="mt-4" block layout="outline">
                 <TwitterIcon className="w-4 h-4 mr-2" aria-hidden="true" />
                 Twitter
               </Button>

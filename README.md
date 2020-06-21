@@ -40,7 +40,7 @@ Read comments inside [routes.js](./src/routes.js)
 
 - Add `disabled` style to `radio` and `checkbox`
 
-- Add icons and buttons to `Input`
+- [x] Add icons and buttons to `Input` (won't create a component for this)
 
 ### Cards
 
@@ -48,7 +48,7 @@ Read comments inside [routes.js](./src/routes.js)
 
 ### Tables
 
-- Extract table icon buttons into components
+- [x] Extract table icon buttons into components
 
 - [x] Place demo tables directly inside pages instead of creating components.
 

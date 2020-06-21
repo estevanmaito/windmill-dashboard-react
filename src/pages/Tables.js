@@ -17,6 +17,7 @@ import Badge from '../components/Badge'
 import { EditIcon, TrashIcon } from '../icons'
 import Avatar from '../components/Avatar'
 import data from '../utils/demo/tableData'
+import Button from '../components/Button'
 
 function Tables() {
   return (
@@ -100,13 +101,13 @@ function Tables() {
                   <span className="text-sm">{new Date(user.date).toLocaleDateString()}</span>
                 </TableCell>
                 <TableCell>
-                  <div className="flex items-center space-x-4 text-sm">
-                    <button className="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray">
+                  <div className="flex items-center space-x-4">
+                    <Button layout="link" size="icon">
                       <EditIcon className="w-5 h-5" aria-hidden="true" />
-                    </button>
-                    <button className="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray">
+                    </Button>
+                    <Button layout="link" size="icon">
                       <TrashIcon className="w-5 h-5" aria-hidden="true" />
-                    </button>
+                    </Button>
                   </div>
                 </TableCell>
               </TableRow>

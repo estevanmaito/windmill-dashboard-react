@@ -51,17 +51,17 @@ function Login() {
                 </span>
               </Label>
 
-              <Button tag={Link} to="/login" className="w-full mt-4">
+              <Button tag={Link} to="/login" block className="mt-4">
                 Create account
               </Button>
 
               <hr className="my-8" />
 
-              <Button className="w-full" outline>
+              <Button block layout="outline">
                 <GithubIcon className="w-4 h-4 mr-2" aria-hidden="true" />
                 Github
               </Button>
-              <Button className="w-full mt-4" outline>
+              <Button block className="mt-4" layout="outline">
                 <TwitterIcon className="w-4 h-4 mr-2" aria-hidden="true" />
                 Twitter
               </Button>

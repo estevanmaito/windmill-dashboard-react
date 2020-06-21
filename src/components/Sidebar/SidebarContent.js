@@ -3,6 +3,7 @@ import routes from '../../routes/sidebar'
 import { NavLink, Route } from 'react-router-dom'
 import * as Icons from '../../icons'
 import SidebarSubmenu from './SidebarSubmenu'
+import Button from '../Button'
 
 function Icon({ icon, ...props }) {
   const Icon = Icons[icon]
@@ -41,12 +42,12 @@ function SidebarContent() {
         )}
       </ul>
       <div className="px-6 my-6">
-        <button className="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+        <Button>
           Create account
           <span className="ml-2" aria-hidden="true">
             +
           </span>
-        </button>
+        </Button>
       </div>
     </div>
   )

@@ -36,7 +36,7 @@ function ForgotPassword() {
                 <Input className="mt-1" placeholder="Jane Doe" />
               </Label>
 
-              <Button tag={Link} to="/login" className="w-full mt-4">
+              <Button tag={Link} to="/login" block className="mt-4">
                 Recover password
               </Button>
             </div>

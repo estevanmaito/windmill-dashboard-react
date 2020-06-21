@@ -40,43 +40,43 @@ function Buttons() {
         </div>
 
         <div>
-          <Button size="small">Regular</Button>
+          <Button size="small">Small</Button>
         </div>
       </div>
 
       <SectionTitle>Outline</SectionTitle>
       <div className="flex flex-col flex-wrap mb-8 space-y-4 md:flex-row md:items-end md:space-x-4">
         <div>
-          <Button outline size="larger">
+          <Button layout="outline" size="larger">
             Larger Button
           </Button>
         </div>
 
         <div>
-          <Button outline size="large">
+          <Button layout="outline" size="large">
             Large Button
           </Button>
         </div>
 
         <div>
-          <Button outline>Regular</Button>
+          <Button layout="outline">Regular</Button>
         </div>
 
         <div>
-          <Button outline tag={Link} to="/dashboard">
+          <Button layout="outline" tag={Link} to="/dashboard">
             Router Link
           </Button>
         </div>
 
         <div>
-          <Button outline disabled>
+          <Button layout="outline" disabled>
             Disabled
           </Button>
         </div>
 
         <div>
-          <Button outline size="small">
-            Regular
+          <Button layout="outline" size="small">
+            Small
           </Button>
         </div>
       </div>
