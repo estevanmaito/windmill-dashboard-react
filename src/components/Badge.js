@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 
 function Badge({ children, type }) {
-  const baseStyle = 'px-2 py-1 text-xs font-medium leading-tight rounded-full'
+  const baseStyle = 'px-2 py-1 text-xs font-medium leading-none rounded-full'
   const success = 'text-green-700 bg-green-100 dark:bg-green-700 dark:text-green-100'
   const danger = 'text-red-700 bg-red-100 dark:text-red-100 dark:bg-red-700'
   const warning = 'text-orange-700 bg-orange-100 dark:text-white dark:bg-orange-600'
