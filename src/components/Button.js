@@ -32,6 +32,12 @@ const Button = React.forwardRef(function Button(props, ref) {
     active: 'hover:bg-gray-100 focus:shadow-outline-gray',
     disabled: 'opacity-50 cursor-not-allowed',
   }
+  /**
+   * Only used in DropdownItem.
+   * Not meant for general use.
+   */
+  const dropdownStyle =
+    'inline-flex items-center cursor-pointer w-full px-2 py-1 text-sm font-medium transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200'
 
   // Render button as default
   // TODO: consider input type
@@ -62,6 +68,8 @@ const Button = React.forwardRef(function Button(props, ref) {
         return outline.base + ' ' + outline[disabled ? 'disabled' : 'active']
       case 'link':
         return link.base + ' ' + link[disabled ? 'disabled' : 'active']
+      case 'dropdown':
+        return dropdownStyle
       case 'primary':
       default:
         return primary.base + ' ' + primary[disabled ? 'disabled' : 'active']
@@ -70,7 +78,10 @@ const Button = React.forwardRef(function Button(props, ref) {
   // primary (default), outline, link
   let layoutStyle = buttonLayout(layout)
 
-  const cls = classNames(baseStyle, sizeStyle, layoutStyle, blockStyle, className)
+  const cls =
+    layout === 'dropdown'
+      ? classNames(layoutStyle, className)
+      : classNames(baseStyle, sizeStyle, layoutStyle, blockStyle, className)
   return (
     <Component className={cls} ref={ref} disabled={disabled} {...other}>
       {children}

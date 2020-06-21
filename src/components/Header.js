@@ -14,6 +14,9 @@ import {
   OutlineLogoutIcon,
 } from '../icons'
 import Input from '../components/Form/Input'
+import Badge from './Badge'
+import { Dropdown, DropdownItem } from './Dropdown'
+import Avatar from './Avatar'
 
 function Header() {
   const { theme, toggleTheme } = useContext(ThemeContext)
@@ -96,38 +99,19 @@ function Header() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <ul className="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:text-gray-300 dark:border-gray-700 dark:bg-gray-700">
-                <li className="flex">
-                  <a
-                    className="inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                    href="#"
-                  >
-                    <span>Messages</span>
-                    <span className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-600 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-600">
-                      13
-                    </span>
-                  </a>
-                </li>
-                <li className="flex">
-                  <a
-                    className="inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                    href="#"
-                  >
-                    <span>Sales</span>
-                    <span className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-600 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-600">
-                      2
-                    </span>
-                  </a>
-                </li>
-                <li className="flex">
-                  <a
-                    className="inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                    href="#"
-                  >
-                    <span>Alerts</span>
-                  </a>
-                </li>
-              </ul>
+              <Dropdown aria-label="submenu">
+                <DropdownItem tag="a" href="#" className="justify-between">
+                  <span>Messages</span>
+                  <Badge type="danger">13</Badge>
+                </DropdownItem>
+                <DropdownItem tag="a" href="#" className="justify-between">
+                  <span>Sales</span>
+                  <Badge type="danger">2</Badge>
+                </DropdownItem>
+                <DropdownItem onClick={() => alert('Alerts!')}>
+                  <span>Alerts</span>
+                </DropdownItem>
+              </Dropdown>
             </Transition>
           </li>
           {/* <!-- Profile menu --> */}
@@ -138,9 +122,8 @@ function Header() {
               aria-label="Account"
               aria-haspopup="true"
             >
-              <img
-                className="object-cover w-8 h-8 rounded-full"
-                src="https://images.unsplash.com/photo-1502378735452-bc7d86632805?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=aa3a807e1bbdfd4364d1f449eaa96d82"
+              <Avatar
+                img="https://images.unsplash.com/photo-1502378735452-bc7d86632805?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=aa3a807e1bbdfd4364d1f449eaa96d82"
                 alt=""
                 aria-hidden="true"
               />
@@ -151,38 +134,20 @@ function Header() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <ul
-                className="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:border-gray-700 dark:text-gray-300 dark:bg-gray-700"
-                aria-label="submenu"
-              >
-                <li className="flex">
-                  <a
-                    className="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                    href="#"
-                  >
-                    <OutlinePersonIcon className="w-4 h-4 mr-3" aria-hidden="true" />
-                    <span>Profile</span>
-                  </a>
-                </li>
-                <li className="flex">
-                  <a
-                    className="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                    href="#"
-                  >
-                    <OutlineCogIcon className="w-4 h-4 mr-3" aria-hidden="true" />
-                    <span>Settings</span>
-                  </a>
-                </li>
-                <li className="flex">
-                  <a
-                    className="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                    href="#"
-                  >
-                    <OutlineLogoutIcon className="w-4 h-4 mr-3" aria-hidden="true" />
-                    <span>Log out</span>
-                  </a>
-                </li>
-              </ul>
+              <Dropdown aria-label="submenu">
+                <DropdownItem tag="a" href="#">
+                  <OutlinePersonIcon className="w-4 h-4 mr-3" aria-hidden="true" />
+                  <span>Profile</span>
+                </DropdownItem>
+                <DropdownItem tag="a" href="#">
+                  <OutlineCogIcon className="w-4 h-4 mr-3" aria-hidden="true" />
+                  <span>Settings</span>
+                </DropdownItem>
+                <DropdownItem onClick={() => alert('Log out!')}>
+                  <OutlineLogoutIcon className="w-4 h-4 mr-3" aria-hidden="true" />
+                  <span>Log out</span>
+                </DropdownItem>
+              </Dropdown>
             </Transition>
           </li>
         </ul>

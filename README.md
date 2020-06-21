@@ -20,7 +20,7 @@ Read comments inside [routes.js](./src/routes.js)
 
 - Improve `Suspense` fallback
 
-- Componentize dropdown menus
+- [x] Componentize dropdown menus
 
 ### Sidebar
 
