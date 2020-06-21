@@ -161,6 +161,9 @@ module.exports = {
       },
     },
     extend: {
+      minWidth: {
+        'max-content': 'max-content',
+      },
       maxHeight: {
         '0': '0',
         xl: '36rem',
