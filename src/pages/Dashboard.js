@@ -89,7 +89,7 @@ function Dashboard() {
               <TableRow key={i}>
                 <TableCell>
                   <div className="flex items-center text-sm">
-                    <Avatar className="hidden mr-3 md:block" img={user.avatar} />
+                    <Avatar className="hidden mr-3 md:block" img={user.avatar} alt="User image" />
                     <div>
                       <p className="font-semibold">{user.name}</p>
                       <p className="text-xs text-gray-600 dark:text-gray-400">{user.job}</p>

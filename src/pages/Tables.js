@@ -42,7 +42,7 @@ function Tables() {
               <TableRow key={i}>
                 <TableCell>
                   <div className="flex items-center text-sm">
-                    <Avatar className="hidden mr-3 md:block" img={user.avatar} />
+                    <Avatar className="hidden mr-3 md:block" img={user.avatar} alt="User avatar" />
                     <div>
                       <p className="font-semibold">{user.name}</p>
                       <p className="text-xs text-gray-600 dark:text-gray-400">{user.job}</p>
@@ -82,7 +82,7 @@ function Tables() {
               <TableRow key={i}>
                 <TableCell>
                   <div className="flex items-center text-sm">
-                    <Avatar className="hidden mr-3 md:block" img={user.avatar} />
+                    <Avatar className="hidden mr-3 md:block" img={user.avatar} alt="User avatar" />
                     <div>
                       <p className="font-semibold">{user.name}</p>
                       <p className="text-xs text-gray-600 dark:text-gray-400">
@@ -102,10 +102,10 @@ function Tables() {
                 </TableCell>
                 <TableCell>
                   <div className="flex items-center space-x-4">
-                    <Button layout="link" size="icon">
+                    <Button layout="link" size="icon" aria-label="Edit">
                       <EditIcon className="w-5 h-5" aria-hidden="true" />
                     </Button>
-                    <Button layout="link" size="icon">
+                    <Button layout="link" size="icon" aria-label="Delete">
                       <TrashIcon className="w-5 h-5" aria-hidden="true" />
                     </Button>
                   </div>

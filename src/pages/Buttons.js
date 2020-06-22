@@ -135,7 +135,7 @@ function Buttons() {
         </div>
 
         <div>
-          <Button size="icon" arial-label="Like">
+          <Button size="icon" aria-label="Like">
             <HeartIcon className="w-5 h-5" aria-hidden="true" />
           </Button>
         </div>

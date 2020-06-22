@@ -4,7 +4,8 @@ import Backdrop from '../Backdrop'
 import Transition from '../Transition'
 import FocusLock from 'react-focus-lock'
 
-const Modal = React.forwardRef(function Modal({ props, children, onClose, isOpen }) {
+const Modal = React.forwardRef(function Modal(props, ref) {
+  const { children, onClose, isOpen, ...other } = props
   function handleEsc(e) {
     if (e.key === 'Esc' || e.key === 'Escape') {
       onClose()
@@ -42,7 +43,8 @@ const Modal = React.forwardRef(function Modal({ props, children, onClose, isOpen
                 className="w-full px-6 py-4 overflow-hidden bg-white rounded-t-lg dark:bg-gray-800 sm:rounded-lg sm:m-4 sm:max-w-xl"
                 role="dialog"
                 onClick={(e) => e.stopPropagation()}
-                {...props}
+                ref={ref}
+                {...other}
               >
                 <FocusLock returnFocus>
                   <header className="flex justify-end">

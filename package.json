@@ -49,6 +49,7 @@
     "color": "3.1.2",
     "cssnano": "4.1.10",
     "postcss-cli": "7.1.1",
+    "react-axe": "3.5.2",
     "tailwindcss": "1.4.6",
     "tailwindcss-multi-theme": "1.0.3"
   },

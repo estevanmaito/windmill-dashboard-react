@@ -25,7 +25,7 @@ function ForgotPassword() {
               alt="Office"
             />
           </div>
-          <div className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+          <main className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div className="w-full">
               <h1 className="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
                 Forgot password
@@ -40,7 +40,7 @@ function ForgotPassword() {
                 Recover password
               </Button>
             </div>
-          </div>
+          </main>
         </div>
       </div>
     </div>
