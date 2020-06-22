@@ -4,12 +4,13 @@ import './assets/css/tailwind.output.css'
 import App from './App'
 import { ThemeProvider } from './context/ThemeContext'
 import { SidebarProvider } from './context/SidebarContext'
+import ThemedSuspense from './components/ThemedSuspense'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
   <SidebarProvider>
     <ThemeProvider>
-      <Suspense fallback="Loading app...">
+      <Suspense fallback={<ThemedSuspense />}>
         <App />
       </Suspense>
     </ThemeProvider>

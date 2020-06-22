@@ -18,15 +18,9 @@ Read comments inside [routes.js](./src/routes.js)
 
 ## TODO
 
-- [x] Focus first element when opening dropdowns (and focus trap)
-
-- Improve `Suspense` fallback
-
 ### ARIA
 
 - Jump to main content
-
-- [x] Announce page navigation
 
 ### Sidebar
 
@@ -38,7 +32,7 @@ Read comments inside [routes.js](./src/routes.js)
 
 ### Final
 
-- Place reusable components in external library `windmill-ui-react`
+- Place reusable components in external library `windmill-ui-react` <<
 
 - Find approach to chose different themes (primary color, etc)
 

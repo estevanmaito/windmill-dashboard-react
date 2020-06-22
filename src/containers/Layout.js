@@ -5,6 +5,7 @@ import routes from '../routes'
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
 import Main from '../containers/Main'
+import ThemedSuspense from '../components/ThemedSuspense'
 import { SidebarContext } from '../context/SidebarContext'
 
 function Layout() {
@@ -24,7 +25,7 @@ function Layout() {
       <div className="flex flex-col flex-1 w-full">
         <Header />
         <Main>
-          <Suspense fallback="Loading...">
+          <Suspense fallback={<ThemedSuspense />}>
             <Switch>
               {routes.map((route, i) => {
                 return route.component ? (
