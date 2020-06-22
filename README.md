@@ -20,9 +20,13 @@ Read comments inside [routes.js](./src/routes.js)
 
 - [x] Focus first element when opening dropdowns (and focus trap)
 
+- Improve `Suspense` fallback
+
+### ARIA
+
 - Jump to main content
 
-- Improve `Suspense` fallback
+- [x] Announce page navigation
 
 ### Sidebar
 
