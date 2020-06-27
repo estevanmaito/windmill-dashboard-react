@@ -18,6 +18,8 @@ Read comments inside [routes.js](./src/routes.js)
 
 ## TODO
 
+- Redirect to 404 non-existing pages
+
 ### ARIA
 
 - Jump to main content
@@ -25,10 +27,6 @@ Read comments inside [routes.js](./src/routes.js)
 ### Sidebar
 
 - Needs to be checked again, as tables are now static: Check why the page is re-rendered when sidebar is opened/closed on mobile. To reproduce: Got to Dashboard main page, reduce screen size, open and close the sidebar. You can see the table is being re-rendered.
-
-### Dashboard
-
-- Create `Pagination` component
 
 ### Final
 

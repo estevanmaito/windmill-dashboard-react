@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import CTA from '../components/CTA'
 import InfoCard from '../components/Cards/InfoCard'
@@ -8,7 +8,7 @@ import ChartLegend from '../components/Chart/ChartLegend'
 import PageTitle from '../components/Typography/PageTitle'
 import { ChatIcon, CartIcon, MoneyIcon, PeopleIcon } from '../icons'
 import RoundIcon from '../components/RoundIcon'
-import data from '../utils/demo/tableData'
+import response from '../utils/demo/tableData'
 import {
   TableBody,
   TableContainer,
@@ -27,8 +27,27 @@ import {
   doughnutLegends,
   lineLegends,
 } from '../utils/demo/chartsData'
+import Pagination from '../components/Pagination'
 
 function Dashboard() {
+  const [page, setPage] = useState(1)
+  const [data, setData] = useState([])
+
+  // pagination setup
+  const resultsPerPage = 10
+  const totalResults = response.length
+
+  // pagination change control
+  function onPageChange(p) {
+    setPage(p)
+  }
+
+  // on page change, load new sliced data
+  // here you would make another server request for new data
+  useEffect(() => {
+    setData(response.slice((page - 1) * resultsPerPage, page * resultsPerPage))
+  }, [page])
+
   return (
     <>
       <PageTitle>Dashboard</PageTitle>
@@ -109,7 +128,14 @@ function Dashboard() {
             ))}
           </TableBody>
         </Table>
-        <TableFooter />
+        <TableFooter>
+          <Pagination
+            totalResults={totalResults}
+            resultsPerPage={resultsPerPage}
+            label="Table navigation"
+            onChange={onPageChange}
+          />
+        </TableFooter>
       </TableContainer>
 
       <PageTitle>Charts</PageTitle>
