@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 
 import PageTitle from '../components/Typography/PageTitle'
 import CTA from '../components/CTA'
-import Button from '../components/Button'
-import { Modal, ModalHeader, ModalBody, ModalFooter } from '../components/Modal'
+import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'windmill-react-ui'
 
 function Modals() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -32,15 +31,29 @@ function Modals() {
           voluptatem tempore!
         </ModalBody>
         <ModalFooter>
-          <button
-            onClick={closeModal}
-            className="w-full px-5 py-3 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg dark:text-gray-400 sm:px-4 sm:py-2 sm:w-auto active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray"
-          >
-            Cancel
-          </button>
-          <button className="w-full px-5 py-3 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg sm:w-auto sm:px-4 sm:py-2 active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-            Accept
-          </button>
+          {/* I don't like this approach. Consider passing a prop to ModalFooter
+           * that if present, would duplicate the buttons in a way similar to this.
+           * Or, maybe find some way to pass something like size="large md:regular"
+           * to Button
+           */}
+          <div className="hidden md:block">
+            <Button layout="outline" onClick={closeModal}>
+              Cancel
+            </Button>
+          </div>
+          <div className="hidden md:block">
+            <Button>Accept</Button>
+          </div>
+          <div className="block w-full md:hidden">
+            <Button block size="large" layout="outline" onClick={closeModal}>
+              Cancel
+            </Button>
+          </div>
+          <div className="block w-full md:hidden">
+            <Button block size="large">
+              Accept
+            </Button>
+          </div>
         </ModalFooter>
       </Modal>
     </>

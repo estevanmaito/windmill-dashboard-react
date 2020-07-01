@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom'
 import ImageLight from '../assets/img/login-office.jpeg'
 import ImageDark from '../assets/img/login-office-dark.jpeg'
 import { GithubIcon, TwitterIcon } from '../icons'
-import { Label, Input } from '../components/Form'
-import Button from '../components/Button'
+import { Label, Input, Button } from 'windmill-react-ui'
 
 function Login() {
   return (
@@ -39,7 +38,7 @@ function Login() {
                 <Input className="mt-1" type="password" placeholder="***************" />
               </Label>
 
-              <Button className="mt-4" block tag={Link} to="/">
+              <Button className="mt-4" block tag={Link} to="/app">
                 Log in
               </Button>
 

@@ -1,6 +1,5 @@
 import React, { useContext, useState, useRef } from 'react'
 import useOutsideClick from '../hooks/useOutsideClick'
-import { ThemeContext } from '../context/ThemeContext'
 import { SidebarContext } from '../context/SidebarContext'
 import {
   SearchIcon,
@@ -12,13 +11,10 @@ import {
   OutlineCogIcon,
   OutlineLogoutIcon,
 } from '../icons'
-import Input from '../components/Form/Input'
-import Badge from './Badge'
-import { Dropdown, DropdownItem } from './Dropdown'
-import Avatar from './Avatar'
+import { Avatar, Badge, Input, Dropdown, DropdownItem, WindmillContext } from 'windmill-react-ui'
 
 function Header() {
-  const { theme, toggleTheme } = useContext(ThemeContext)
+  const { mode, toggleMode } = useContext(WindmillContext)
   const { toggleSidebar } = useContext(SidebarContext)
 
   const [isNotificationsMenuOpen, setIsNotificationsMenuOpen] = useState(false)
@@ -67,13 +63,13 @@ function Header() {
           <li className="flex">
             <button
               className="rounded-md focus:outline-none focus:shadow-outline-purple"
-              onClick={toggleTheme}
+              onClick={toggleMode}
               aria-label="Toggle color mode"
             >
-              {theme !== 'dark' ? (
-                <MoonIcon className="w-5 h-5" aria-hidden="true" />
-              ) : (
+              {mode === 'dark' ? (
                 <SunIcon className="w-5 h-5" aria-hidden="true" />
+              ) : (
+                <MoonIcon className="w-5 h-5" aria-hidden="true" />
               )}
             </button>
           </li>

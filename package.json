@@ -1,6 +1,7 @@
 {
   "name": "windmill-dashboard-react",
   "version": "0.1.0-alpha.0",
+  "description": "A multi theme, completely accessible, with components and pages examples, (almost) ready for production dashboard.",
   "private": true,
   "scripts": {
     "tailwind:dev": "tailwindcss build src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
@@ -9,6 +10,8 @@
     "start": "react-scripts start",
     "prebuild": "npm run tailwind:build",
     "build": "react-scripts build",
+    "cz": "git-cz",
+    "release": "release-it",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -25,7 +28,43 @@
     "react-focus-lock": "2.4.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
-    "react-transition-group": "4.4.1"
+    "react-transition-group": "4.4.1",
+    "windmill-react-ui": "0.1.0-alpha.8"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "1.1.4",
+    "@svgr/webpack": "5.4.0",
+    "@tailwindcss/custom-forms": "0.2.1",
+    "autoprefixer": "9.8.0",
+    "color": "3.1.2",
+    "commitizen": "4.1.2",
+    "cssnano": "4.1.10",
+    "cz-conventional-changelog": "3.2.0",
+    "postcss-cli": "7.1.1",
+    "react-axe": "3.5.2",
+    "release-it": "13.6.4",
+    "tailwindcss": "1.4.6",
+    "tailwindcss-multi-theme": "1.0.3"
+  },
+  "keywords": [
+    "windmill",
+    "dashboard",
+    "admin",
+    "tailwind",
+    "react"
+  ],
+  "release-it": {
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,23 +80,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@svgr/webpack": "5.4.0",
-    "@tailwindcss/custom-forms": "0.2.1",
-    "autoprefixer": "9.8.0",
-    "color": "3.1.2",
-    "cssnano": "4.1.10",
-    "postcss-cli": "7.1.1",
-    "react-axe": "3.5.2",
-    "tailwindcss": "1.4.6",
-    "tailwindcss-multi-theme": "1.0.3"
-  },
-  "keywords": [
-    "windmill",
-    "dashboard",
-    "admin",
-    "tailwind",
-    "react"
-  ]
+  }
 }

@@ -1,4 +1,4 @@
-import React, { useContext, Suspense, useEffect } from 'react'
+import React, { useContext, Suspense, useEffect, lazy } from 'react'
 import { Switch, Route, Redirect, useLocation } from 'react-router-dom'
 import routes from '../routes'
 
@@ -7,6 +7,8 @@ import Header from '../components/Header'
 import Main from '../containers/Main'
 import ThemedSuspense from '../components/ThemedSuspense'
 import { SidebarContext } from '../context/SidebarContext'
+
+const Page404 = lazy(() => import('../pages/404'))
 
 function Layout() {
   const { isSidebarOpen, closeSidebar } = useContext(SidebarContext)
@@ -32,12 +34,13 @@ function Layout() {
                   <Route
                     key={i}
                     exact={true}
-                    path={route.path}
+                    path={`/app${route.path}`}
                     render={(props) => <route.component {...props} />}
                   />
                 ) : null
               })}
-              <Redirect from="/" to="/dashboard" />
+              <Redirect exact from="/app" to="/app/dashboard" />
+              <Route component={Page404} />
             </Switch>
           </Suspense>
         </Main>

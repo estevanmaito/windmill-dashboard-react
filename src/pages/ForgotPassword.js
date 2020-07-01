@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 
 import ImageLight from '../assets/img/forgot-password-office.jpeg'
 import ImageDark from '../assets/img/forgot-password-office-dark.jpeg'
-import Button from '../components/Button'
-import { Label, Input } from '../components/Form'
+import { Label, Input, Button } from 'windmill-react-ui'
 
 function ForgotPassword() {
   return (

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Transition from '../Transition'
 import { Link } from 'react-router-dom'
 import { DropdownIcon } from '../../icons'
 import * as Icons from '../../icons'
+import { Transition } from 'windmill-react-ui'
 
 function Icon({ icon, ...props }) {
   const Icon = Icons[icon]

@@ -55,7 +55,7 @@ const routes = [
     component: Page404,
   },
   {
-    path: '/pages/blank',
+    path: '/blank',
     component: Blank,
   },
 ]

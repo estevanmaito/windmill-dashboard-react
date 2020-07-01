@@ -2,23 +2,23 @@ import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom'
 import './assets/css/tailwind.output.css'
 import App from './App'
-import { ThemeProvider } from './context/ThemeContext'
 import { SidebarProvider } from './context/SidebarContext'
 import ThemedSuspense from './components/ThemedSuspense'
+import { Windmill } from 'windmill-react-ui'
 import * as serviceWorker from './serviceWorker'
 
-if (process.env.NODE_ENV !== 'production') {
-  const axe = require('react-axe')
-  axe(React, ReactDOM, 1000)
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   const axe = require('react-axe')
+//   axe(React, ReactDOM, 1000)
+// }
 
 ReactDOM.render(
   <SidebarProvider>
-    <ThemeProvider>
-      <Suspense fallback={<ThemedSuspense />}>
+    <Suspense fallback={<ThemedSuspense />}>
+      <Windmill>
         <App />
-      </Suspense>
-    </ThemeProvider>
+      </Windmill>
+    </Suspense>
   </SidebarProvider>,
   document.getElementById('root')
 )

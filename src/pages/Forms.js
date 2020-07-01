@@ -2,12 +2,8 @@ import React from 'react'
 
 import CTA from '../components/CTA'
 import PageTitle from '../components/Typography/PageTitle'
-import Input from '../components/Form/Input'
-import HelperText from '../components/Form/HelperText'
-import Label from '../components/Form/Label'
 import SectionTitle from '../components/Typography/SectionTitle'
-import Select from '../components/Form/Select'
-import Textarea from '../components/Form/Textarea'
+import { Input, HelperText, Label, Select, Textarea } from 'windmill-react-ui'
 
 import { MailIcon } from '../icons'
 

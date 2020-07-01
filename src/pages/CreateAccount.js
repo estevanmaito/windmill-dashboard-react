@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom'
 import ImageLight from '../assets/img/create-account-office.jpeg'
 import ImageDark from '../assets/img/create-account-office-dark.jpeg'
 import { GithubIcon, TwitterIcon } from '../icons'
-import Button from '../components/Button'
-import { Input, Label } from '../components/Form'
+import { Input, Label, Button } from 'windmill-react-ui'
 
 function Login() {
   return (

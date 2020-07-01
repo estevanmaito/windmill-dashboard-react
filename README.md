@@ -18,21 +18,11 @@ Read comments inside [routes.js](./src/routes.js)
 
 ## TODO
 
-- Redirect to 404 non-existing pages
-
 ### ARIA
 
 - Jump to main content
 
-### Sidebar
-
-- Needs to be checked again, as tables are now static: Check why the page is re-rendered when sidebar is opened/closed on mobile. To reproduce: Got to Dashboard main page, reduce screen size, open and close the sidebar. You can see the table is being re-rendered.
-
-### Final
-
-- Place reusable components in external library `windmill-ui-react` <<
-
-- Find approach to chose different themes (primary color, etc)
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

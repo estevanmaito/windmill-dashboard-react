@@ -18,7 +18,7 @@ function App() {
           <Route path="/forgot-password" component={ForgotPassword} />
 
           {/* Place new routes over this */}
-          <Route path="/" component={Layout} />
+          <Route path="/app" component={Layout} />
         </Switch>
       </Router>
     </>

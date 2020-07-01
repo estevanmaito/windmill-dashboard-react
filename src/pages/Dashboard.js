@@ -17,9 +17,10 @@ import {
   TableCell,
   TableRow,
   TableFooter,
-} from '../components/Tables'
-import Avatar from '../components/Avatar'
-import Badge from '../components/Badge'
+  Avatar,
+  Badge,
+  Pagination,
+} from 'windmill-react-ui'
 
 import {
   doughnutOptions,
@@ -27,7 +28,6 @@ import {
   doughnutLegends,
   lineLegends,
 } from '../utils/demo/chartsData'
-import Pagination from '../components/Pagination'
 
 function Dashboard() {
   const [page, setPage] = useState(1)

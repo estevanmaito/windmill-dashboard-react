@@ -11,12 +11,12 @@ import {
   TableRow,
   TableFooter,
   TableContainer,
-} from '../components/Tables'
-import Badge from '../components/Badge'
+  Badge,
+  Avatar,
+  Button,
+  Pagination,
+} from 'windmill-react-ui'
 import { EditIcon, TrashIcon } from '../icons'
-import Avatar from '../components/Avatar'
-import Button from '../components/Button'
-import Pagination from '../components/Pagination'
 
 import response from '../utils/demo/tableData'
 // make a copy of the data, for the second table

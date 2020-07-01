@@ -1,6 +1,5 @@
 import React from 'react'
-import Card from './Card'
-import CardBody from './CardBody'
+import { Card, CardBody } from 'windmill-react-ui'
 
 function InfoCard({ title, value, children: icon }) {
   return (
