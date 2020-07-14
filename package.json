@@ -11,7 +11,7 @@
     "prebuild": "npm run tailwind:build",
     "build": "react-scripts build",
     "cz": "git-cz",
-    "release": "release-it",
+    "release": "dotenv release-it",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -29,7 +29,7 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
     "react-transition-group": "4.4.1",
-    "windmill-react-ui": "0.1.0-alpha.10"
+    "windmill-react-ui": "0.1.1"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "1.1.4",
@@ -40,6 +40,7 @@
     "commitizen": "4.1.2",
     "cssnano": "4.1.10",
     "cz-conventional-changelog": "3.2.0",
+    "dotenv-cli": "3.2.0",
     "postcss-cli": "7.1.1",
     "react-axe": "3.5.2",
     "release-it": "13.6.4",
@@ -54,6 +55,9 @@
     "react"
   ],
   "release-it": {
+    "github": {
+      "release": true
+    },
     "plugins": {
       "@release-it/conventional-changelog": {
         "preset": "angular",
