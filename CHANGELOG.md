@@ -1,3 +1,10 @@
+# [0.1.0](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.1.0-alpha.2...0.1.0) (2020-07-14)
+
+
+### Features
+
+* **global:** upgrade to last windmill-ui version ([708fce4](https://github.com/estevanmaito/windmill-dashboard-react/commit/708fce44efe18e97190775fb41ca068c653549a7))
+
 # [0.1.0-alpha.2](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.1.0-alpha.1...0.1.0-alpha.2) (2020-07-07)
 
 
