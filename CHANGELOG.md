@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.2.0...0.2.1) (2020-07-17)
+
+
+### Bug Fixes
+
+* **header:** fix bleeding header shadow ([4eef708](https://github.com/estevanmaito/windmill-dashboard-react/commit/4eef7087e7e3d63b12cca040084f68d13604cb57))
+
 # [0.2.0](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.1.0...0.2.0) (2020-07-17)
 
 
