@@ -11,7 +11,7 @@
     "prebuild": "npm run tailwind:build",
     "build": "react-scripts build",
     "cz": "git-cz",
-    "release": "dotenv release-it",
+    "release": "release-it",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -38,7 +38,6 @@
     "commitizen": "4.1.2",
     "cssnano": "4.1.10",
     "cz-conventional-changelog": "3.2.0",
-    "dotenv-cli": "3.2.0",
     "postcss-cli": "7.1.1",
     "react-axe": "3.5.2",
     "release-it": "13.6.4",
