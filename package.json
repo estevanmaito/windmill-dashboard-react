@@ -29,14 +29,12 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
     "react-transition-group": "4.4.1",
-    "windmill-react-ui": "0.1.1"
+    "windmill-react-ui": "0.1.2-beta.0"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "1.1.4",
     "@svgr/webpack": "5.4.0",
-    "@tailwindcss/custom-forms": "0.2.1",
     "autoprefixer": "9.8.0",
-    "color": "3.1.2",
     "commitizen": "4.1.2",
     "cssnano": "4.1.10",
     "cz-conventional-changelog": "3.2.0",
@@ -44,8 +42,7 @@
     "postcss-cli": "7.1.1",
     "react-axe": "3.5.2",
     "release-it": "13.6.4",
-    "tailwindcss": "1.4.6",
-    "tailwindcss-multi-theme": "1.0.3"
+    "tailwindcss": "1.4.6"
   },
   "keywords": [
     "windmill",

@@ -1,13 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
-const windmillPlugin = require('windmill-react-ui/plugin')
+const windmill = require('windmill-react-ui/config')
 
-module.exports = {
-  purge: {
-    content: ['src/**/*.js', 'node_modules/windmill-react-ui/lib/defaultTheme.js'],
-    options: {
-      whitelist: ['theme-dark'],
-    },
-  },
+module.exports = windmill({
+  purge: ['src/**/*.js'],
   theme: {
     extend: {
       fontFamily: {
@@ -15,6 +10,4 @@ module.exports = {
       },
     },
   },
-  variants: {},
-  plugins: [windmillPlugin()],
-}
+})
