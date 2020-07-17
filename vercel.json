@@ -1,0 +1,6 @@
+{
+  "version": 2,
+    "builds": [
+      { "src": "./dashboard-react/**", "use": "@vercel/static" }
+    ]
+}
