@@ -1,3 +1,40 @@
+# [0.2.0](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.1.0...0.2.0) (2020-07-17)
+
+
+### Bug Fixes
+
+* **favicon:** update logo for pwa ([5e788d2](https://github.com/estevanmaito/windmill-dashboard-react/commit/5e788d24b8a18f90b450c85d04f319daf42bcf82))
+
+
+### Features
+
+* **global:** update windmill-react-ui ([6c5c3c0](https://github.com/estevanmaito/windmill-dashboard-react/commit/6c5c3c0cb42df1bbbe8cf5d7e5e637101d556433))
+* **serviceworker:** activate service worker ([984dd8b](https://github.com/estevanmaito/windmill-dashboard-react/commit/984dd8b87aa7ee54f7a521550b8ad9c396b21e04))
+
+
+### BREAKING CHANGES
+
+* **global:** Now you need to wrap the entire tailwind config object with Windmill's config
+wrapper. There is no need to use Windmill plugin or purge anymore.
+
+Complete example:
+
+```js
+const defaultTheme = require('tailwindcss/defaultTheme')
+const windmill = require('windmill-react-ui/config')
+
+module.exports = windmill({
+  purge: ['src/**/*.js'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+      },
+    },
+  },
+})
+```
+
 # [0.1.0](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.1.0-alpha.2...0.1.0) (2020-07-14)
 
 
