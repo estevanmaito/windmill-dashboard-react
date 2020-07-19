@@ -1,3 +1,11 @@
+## [0.2.2](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.2.1...0.2.2) (2020-07-19)
+
+
+### Bug Fixes
+
+* **env:** use cross-env for env variables ([18fdfda](https://github.com/estevanmaito/windmill-dashboard-react/commit/18fdfda80f00bd5e5f2cfa0fb8c3de7a5a32fb02))
+* **windmill:** bump windmill-react-ui from 0.1.2-beta.0 to 0.1.2 ([07dcf08](https://github.com/estevanmaito/windmill-dashboard-react/commit/07dcf086125c263b85fb72bdf4c34429e83923b7))
+
 ## [0.2.1](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.2.0...0.2.1) (2020-07-17)
 
 

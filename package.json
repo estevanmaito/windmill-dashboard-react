@@ -1,6 +1,6 @@
 {
   "name": "windmill-dashboard-react",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A multi theme, completely accessible, with components and pages examples, (almost) ready for production dashboard.",
   "private": true,
   "scripts": {
