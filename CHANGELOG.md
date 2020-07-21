@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.3.0...0.3.1) (2020-07-21)
+
+
+### Bug Fixes
+
+* **windmill:** bump @windmill/react-ui from 0.3.0 to 0.3.1 ([2d3499c](https://github.com/estevanmaito/windmill-dashboard-react/commit/2d3499c4ca3a0b69cc4c9885303505f03646c111))
+
 # [0.3.0](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.2.2...0.3.0) (2020-07-21)
 
 
