@@ -121,29 +121,30 @@ function Buttons() {
       <SectionTitle>Icons</SectionTitle>
       <div className="flex flex-col flex-wrap mb-8 space-y-4 md:flex-row md:items-end md:space-x-4">
         <div>
-          <Button>
+          <Button iconRight={HeartIcon}>
             <span>Icon right</span>
-            <HeartIcon className="w-4 h-4 ml-2 -mr-1" aria-hidden="true" />
           </Button>
         </div>
 
         <div>
-          <Button>
-            <HeartIcon className="w-4 h-4 mr-2 -ml-1" aria-hidden="true" />
+          <Button iconLeft={HeartIcon}>
             <span>Icon Left</span>
           </Button>
         </div>
 
         <div>
-          <Button size="icon" aria-label="Like">
-            <HeartIcon className="w-5 h-5" aria-hidden="true" />
-          </Button>
+          <Button icon={HeartIcon} aria-label="Like" />
         </div>
 
         <div>
-          <Button size="icon" aria-label="Edit">
-            <EditIcon className="w-5 h-5" aria-hidden="true" />
-          </Button>
+          <Button icon={EditIcon} aria-label="Edit" />
+        </div>
+
+        <div>
+          <Button icon={HeartIcon} layout="link" aria-label="Like" />
+        </div>
+        <div>
+          <Button icon={HeartIcon} layout="outline" aria-label="Like" />
         </div>
       </div>
     </>
