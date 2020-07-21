@@ -15,7 +15,7 @@ import {
   Avatar,
   Button,
   Pagination,
-} from 'windmill-react-ui'
+} from '@windmill/react-ui'
 import { EditIcon, TrashIcon } from '../icons'
 
 import response from '../utils/demo/tableData'

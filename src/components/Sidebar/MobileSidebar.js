@@ -1,8 +1,7 @@
 import React, { useContext } from 'react'
 
 import SidebarContent from './SidebarContent'
-import { Transition } from 'windmill-react-ui'
-import { Backdrop } from 'windmill-react-ui'
+import { Transition, Backdrop } from '@windmill/react-ui'
 
 import { SidebarContext } from '../../context/SidebarContext'
 

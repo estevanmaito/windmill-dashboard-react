@@ -1,5 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
-const windmill = require('windmill-react-ui/config')
+const windmill = require('@windmill/react-ui/config')
 
 module.exports = windmill({
   purge: ['src/**/*.js'],
