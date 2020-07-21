@@ -16,7 +16,7 @@ export default [
     date: 'Fri Nov 29 2019 10:43:17 GMT-0300 (Brasilia Standard Time)',
   },
   {
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/supjoey/128.jpg',
+    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/jjsiii/128.jpg',
     name: 'Lonie Wyman',
     job: 'Legacy Program Director',
     amount: 934.24,
@@ -32,7 +32,7 @@ export default [
     date: 'Fri Jun 21 2019 20:21:55 GMT-0300 (Brasilia Standard Time)',
   },
   {
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/mikebeecham/128.jpg',
+    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/operatino/128.jpg',
     name: 'Lorenz Botsford',
     job: 'Central Accountability Developer',
     amount: 355.3,
