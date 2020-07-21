@@ -36,20 +36,20 @@ function Modals() {
            * Or, maybe find some way to pass something like size="large md:regular"
            * to Button
            */}
-          <div className="hidden md:block">
+          <div className="hidden sm:block">
             <Button layout="outline" onClick={closeModal}>
               Cancel
             </Button>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden sm:block">
             <Button>Accept</Button>
           </div>
-          <div className="block w-full md:hidden">
+          <div className="block w-full sm:hidden">
             <Button block size="large" layout="outline" onClick={closeModal}>
               Cancel
             </Button>
           </div>
-          <div className="block w-full md:hidden">
+          <div className="block w-full sm:hidden">
             <Button block size="large">
               Accept
             </Button>
