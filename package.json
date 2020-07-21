@@ -19,7 +19,7 @@
     "@testing-library/jest-dom": "4.2.4",
     "@testing-library/react": "9.5.0",
     "@testing-library/user-event": "7.2.1",
-    "@windmill/react-ui": "0.3.0",
+    "@windmill/react-ui": "0.3.1",
     "chart.js": "2.9.3",
     "classnames": "2.2.6",
     "faker": "4.1.0",
