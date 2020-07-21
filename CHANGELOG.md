@@ -1,3 +1,18 @@
+# [0.3.0](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.2.2...0.3.0) (2020-07-21)
+
+
+### Bug Fixes
+
+* **windmill:** bump windmill to the scoped package ([dad6261](https://github.com/estevanmaito/windmill-dashboard-react/commit/dad626125c05816ddba8cd4dd11c08c4f8154095))
+
+
+### BREAKING CHANGES
+
+* **windmill:** Changed every occurrence of `windmill-react-ui` with the scoped
+`@windmill/react-ui`. You should see no difference updating and you should update, as the other
+project is now deprecated and will no longer be developed. This was needed because the `windmill`
+org was in dispute and npm solved it today.
+
 ## [0.2.2](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.2.1...0.2.2) (2020-07-19)
 
 
