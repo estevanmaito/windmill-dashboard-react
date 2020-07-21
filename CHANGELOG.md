@@ -1,3 +1,10 @@
+## [0.3.2](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.3.1...0.3.2) (2020-07-21)
+
+
+### Bug Fixes
+
+* **modal:** improve button visibility between sm and md breakpoints ([f9dc194](https://github.com/estevanmaito/windmill-dashboard-react/commit/f9dc1941dff21d8d22a7628903fa44c65b86d316))
+
 ## [0.3.1](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.3.0...0.3.1) (2020-07-21)
 
 
