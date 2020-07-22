@@ -1,4 +1,4 @@
-<p style="text-align: center;">
+<p align="center">
     <a href="https://windmillui.com/dashboard-react">
       <img alt="Windmill Dashboard React" width="600" src=".github/windmill-dashboard-react.png">
     </a><br>
