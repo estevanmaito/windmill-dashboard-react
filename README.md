@@ -1,6 +1,9 @@
-# Windmill Dashboard React
-
-Four 100 scores and PWA ready. Just connect your data.
+<p style="text-align: center;">
+    <a href="https://windmillui.com/dashboard-react">
+      <img alt="Windmill Dashboard React" width="600" src=".github/windmill-dashboard-react.png">
+    </a><br>
+    Four 100 scores and PWA ready. Just connect your data.
+</p>
 
 🚀 [See it live](https://windmillui.com/dashboard-react)
 
