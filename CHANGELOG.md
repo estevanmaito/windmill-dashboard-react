@@ -1,3 +1,22 @@
+# [0.4.0](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.3.2...0.4.0) (2020-07-22)
+
+
+### Bug Fixes
+
+* **buttons:** update icon Buttons syntax as recommended in @windmill/react-ui ([15260fd](https://github.com/estevanmaito/windmill-dashboard-react/commit/15260fd23600bfcef488edd818df35a7e4652a58))
+* **sidebar:** hide sidebar until `lg` breakpoint for a better experience on tablets ([57293d9](https://github.com/estevanmaito/windmill-dashboard-react/commit/57293d92d76bbe48f8fab71ea6ef8606fbce72a3)), closes [#3](https://github.com/estevanmaito/windmill-dashboard-react/issues/3)
+
+
+### Features
+
+* **app:** add antialiased font smoothing ([2355363](https://github.com/estevanmaito/windmill-dashboard-react/commit/2355363d30b94ab2e9862f2bfb3eac0e6c75ef61))
+
+
+### BREAKING CHANGES
+
+* **sidebar:** The sidebar now only shows from `lg` breakpoint up, instead of `md`. This should
+create a better experience on smaller screens, especially tablets.
+
 ## [0.3.2](https://github.com/estevanmaito/windmill-dashboard-react/compare/0.3.1...0.3.2) (2020-07-21)
 
 
