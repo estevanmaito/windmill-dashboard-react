@@ -45,12 +45,12 @@ function Login() {
               <hr className="my-8" />
 
               <Button block layout="outline">
-                <GithubIcon className="w-4 h-4 mr-2" aria-hidden="true" />
-                Github
+                <GoogleIcon className="w-4 h-4 mr-2" aria-hidden="true" />
+                Google
               </Button>
               <Button className="mt-4" block layout="outline">
-                <TwitterIcon className="w-4 h-4 mr-2" aria-hidden="true" />
-                Twitter
+                <FacebookIcon className="w-4 h-4 mr-2" aria-hidden="true" />
+                Facebook
               </Button>
 
               <p className="mt-4">
