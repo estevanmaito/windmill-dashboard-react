@@ -44,15 +44,6 @@ function Login() {
 
               <hr className="my-8" />
 
-              <Button block layout="outline">
-                <GoogleIcon className="w-4 h-4 mr-2" aria-hidden="true" />
-                Google
-              </Button>
-              <Button className="mt-4" block layout="outline">
-                <FacebookIcon className="w-4 h-4 mr-2" aria-hidden="true" />
-                Facebook
-              </Button>
-
               <p className="mt-4">
                 <Link
                   className="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
