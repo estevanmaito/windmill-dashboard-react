@@ -12,5 +12,3 @@ module.exports.fromUTC = (string, timezone) => {
         return date.toLocaleDateString('en-US', { dateStyle: 'long', timeStyle: 'short', timeZone: timezone});
     }
 }
-
-console.log(this.fromUTC('Sat, 12 Dec 2020 01:57:05 GMT', 'HKT'));
