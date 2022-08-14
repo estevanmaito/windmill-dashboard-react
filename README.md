@@ -119,7 +119,7 @@ Then add it to the `routes` array:
 If you're asking where does this `/app` come from, it is from this line inside `src/App.js`, that renders the app:
 
 ```jsx
-<Route path="/app" component={Layout} />
+ <Route path="/app" element={<Layout />} />
 ```
 
 ---
