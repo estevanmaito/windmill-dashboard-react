@@ -47,7 +47,7 @@ const routes = [
     element: <Modals />,
   },
   {
-    path: '/tables',
+    path: 'tables',
     element: <Tables />,
   },
   {

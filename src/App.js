@@ -18,8 +18,8 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
 
           {/* Place new routes over this */}
-          <Route path="/app" element={<Layout />} />
-          {/* If you have an index page, you can remothis Redirect */}
+          <Route path="/app/*" element={<Layout />} />
+          {/* If you have an index page, you can remove the following line */}
           <Route path="/" element={<Navigate to='/login' replace />} />
         </Routes>
       </Router>

@@ -27,7 +27,6 @@ function SidebarContent() {
           ) : (
             <li className="relative px-6 py-3" key={route.name}>
               <NavLink
-                exact
                 to={route.path}
                 className={({ isActive }) => 
                   isActive ? activeClassName : className
